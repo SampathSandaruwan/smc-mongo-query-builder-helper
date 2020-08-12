@@ -1,13 +1,18 @@
 {
   "name": "smc-mongoose-query-builder-helper",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "version": "1.0.2",
+  "description": "Query builder helper for mongoose",
+  "keywords": [
+    "smc",
+    "mongoose",
+    "quey",
+    "builder",
+    "helper",
+    "javascript",
+    "typescript",
+    "node"
+  ],
+  "author": "Sampath Sandaruwan",
   "license": "ISC",
   "types": "index.d.ts",
   "dependencies": {
