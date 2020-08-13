@@ -25,30 +25,30 @@ let query = {};
 // list is stores in departments collection and that department that
 // particular person working is stored in a variable called department
 // as an ObjectId which refers to departments collection
-query = queryBuilder.objectIdMatcher(quey, 'department', req.query.department);
+query = queryBuilder.objectIdMatcher(query, 'department', req.query.department);
 
 // If you want to match an exact value. eg: the age of a person
-query = queryBuilder.valueMatcher(quey, 'age', req.query.age);
+query = queryBuilder.valueMatcher(query, 'age', req.query.age);
 
 // If you want to match a pattern. eg: search for a name by providing
 // one or two letters of that name.
-query = queryBuilder.patternMatcher(quey, 'name', req.query.name);
+query = queryBuilder.patternMatcher(query, 'name', req.query.name);
 
 // If you want to find an opposite case of above patternMatcher.
 // eg: you saved account status as a string in collection, and you want
 // to find all users which are not same as a given state (say you want
 // to find all non deleted users)
-query = queryBuilder.patternUnMatcher(quey, 'status', req.query.status);
+query = queryBuilder.patternUnMatcher(query, 'status', req.query.status);
 
 // If you want to check whether your data values is one of among given set
 // eg: you have set of job roles for all employees (say there are 10),
 // and you want to find who are playing managerial role (say there are 3)
 const managerialRoles = ['senior_manager', 'manager', 'managerial_executive'];
-query = queryBuilder.arrayElementMatcher(quey, 'user_role', managerialRoles);
+query = queryBuilder.arrayElementMatcher(query, 'user_role', managerialRoles);
 
 // If you want to find a numeric field that contains a given number
 eg: you want to find users whose phone numbers contains '1234'
-query = queryBuilder.numberPatternMatcher(quey, 'phone_number', 1234);
+query = queryBuilder.numberPatternMatcher(query, 'phone_number', 1234);
 
 // For further query buildings, 
 //      queryBuilder.orOperator(query, valuesArray); and

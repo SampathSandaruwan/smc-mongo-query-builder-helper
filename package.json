@@ -1,6 +1,6 @@
 {
   "name": "smc-mongoose-query-builder-helper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Query builder helper for mongoose",
   "scripts": {
     "version-patch": "npm version patch --no-git-tag",
