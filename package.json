@@ -1,6 +1,6 @@
 {
   "name": "smc-mongoose-query-builder-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Query builder helper for mongoose",
   "scripts": {
     "version-patch": "npm version patch --no-git-tag",
@@ -21,7 +21,6 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@types/mongoose": "^5.7.36",
-    "mongoose": "^5.9.28"
+    "@types/mongoose": "^5.7.36"
   }
 }
