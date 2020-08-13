@@ -1,7 +1,11 @@
 {
   "name": "smc-mongoose-query-builder-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Query builder helper for mongoose",
+  "scripts": {
+    "version-patch": "npm version patch --no-git-tag",
+    "build": "tsc"
+  },
   "keywords": [
     "smc",
     "mongoose",
@@ -14,7 +18,8 @@
   ],
   "author": "Sampath Sandaruwan",
   "license": "ISC",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@types/mongoose": "^5.7.36",
     "mongoose": "^5.9.28"
